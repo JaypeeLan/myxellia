@@ -1,7 +1,13 @@
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { useState } from 'react';
 
-const CalendarDrawer = ({ isCalendarOpen, setIsCalendarOpen }: any) => {
+const CalendarDrawer = ({
+  isCalendarOpen,
+  setIsCalendarOpen,
+}: {
+  isCalendarOpen: boolean;
+  setIsCalendarOpen: (state: boolean) => void;
+}) => {
   const [selectedDate, setSelectedDate] = useState(16);
   return (
     <div

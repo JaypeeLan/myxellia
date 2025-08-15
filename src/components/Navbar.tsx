@@ -4,7 +4,13 @@ import MessageIcon from '@/icons/MessageIcon';
 import NotificationIcon from '@/icons/NotificationIcon';
 import React from 'react';
 
-const Navbar = ({ setIsBudgetModalOpen, setIsCalendarOpen }: any) => {
+const Navbar = ({
+  setIsBudgetModalOpen,
+  setIsCalendarOpen,
+}: {
+  setIsBudgetModalOpen: (state: boolean) => void;
+  setIsCalendarOpen: (state: boolean) => void;
+}) => {
   return (
     <nav className="bg-gray-900 text-white px-6 py-4">
       <div className="flex items-center justify-between max-w-7xl mx-auto">

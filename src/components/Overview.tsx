@@ -49,7 +49,7 @@ const Overview = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-4 text-center p-4">
+          <div className="grid grid-cols-3 gap-4 text-center px-4 py-[26px]">
             {card.stats.map((stat, statIndex) => (
               <div key={statIndex}>
                 <div className="text-sm text-gray-500 mb-1">{stat.label}</div>

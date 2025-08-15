@@ -8,8 +8,8 @@ const salesData = [
   { month: 'May', value: 45 },
   { month: 'Jun', value: 40 },
   { month: 'Jul', value: 35 },
-  { month: 'Aug', value: 30 },
-  { month: 'Sep', value: 35 },
+  // { month: 'Aug', value: 30 },
+  // { month: 'Sep', value: 35 },
 ];
 
 const SalesOverview = () => {
@@ -151,7 +151,7 @@ const SalesOverview = () => {
           </button>
 
           {/* Play Icon */}
-          <button className="w-6 h-6 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+          {/* <button className="w-6 h-6 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
             <svg
               className="w-3 h-3 md:w-4 md:h-4 text-gray-600 ml-0.5"
               fill="currentColor"
@@ -159,7 +159,7 @@ const SalesOverview = () => {
             >
               <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
             </svg>
-          </button>
+          </button> */}
         </div>
 
         {/* Analytics Section - 2x2 Grid */}
