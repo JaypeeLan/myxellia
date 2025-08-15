@@ -1,6 +1,5 @@
 'use client';
 import React, { useState } from 'react';
-import { Bell, Calendar, Grid3X3, Dice1 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import BudgetModal from '@/components/BudgetModal';
 import CalendarDrawer from '@/components/CalenderModal';

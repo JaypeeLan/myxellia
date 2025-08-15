@@ -4,7 +4,6 @@ import RequestIcon from '@/icons/RequestIcon';
 import SearchIcon from '@/icons/SearchIcon';
 import SettingsIcon from '@/icons/SettingsIcon';
 import UsersIcon from '@/icons/UsersIcon';
-import { Settings } from 'lucide-react';
 
 const Navigation: React.FC = () => (
   <nav className="bg-white border-b px-6 py-3 ">

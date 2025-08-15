@@ -74,11 +74,24 @@ const SalesOverview = () => {
 
       {/* Chart and Analytics - Always Side by Side */}
       <div className="flex items-center gap-3 md:gap-6">
+        {/* Previous Icon */}
+        <button className="w-6 h-6 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors flex-shrink-0">
+          <svg
+            className="w-3 h-3 md:w-4 md:h-4 text-gray-600"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+
         {/* Chart Section - Height reduced to 148px */}
         <div className="flex-1 min-w-0">
           <div className="relative h-[148px]">
-            {' '}
-            {/* Changed from h-48 md:h-64 */}
             <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-xs text-gray-500 py-2">
               <span>50m</span>
               <span>40m</span>
@@ -88,7 +101,7 @@ const SalesOverview = () => {
               <span>0</span>
             </div>
             <div className="ml-6 md:ml-8 h-full flex items-end justify-between px-1">
-              {salesData.map((data, index) => (
+              {salesData.map((data) => (
                 <div
                   key={data.month}
                   className="flex flex-col items-center flex-1 max-w-8 md:max-w-12"
@@ -120,11 +133,27 @@ const SalesOverview = () => {
           </div>
         </div>
 
-        {/* Play Icon */}
-        <div className="flex-shrink-0">
-          <button className="w-8 h-8 md:w-10 md:h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+        {/* Next and Play Icons */}
+        <div className="flex flex-col items-center gap-2 flex-shrink-0">
+          {/* Next Icon */}
+          <button className="w-6 h-6 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
             <svg
-              className="w-3 h-3 md:w-5 md:h-5 text-gray-600 ml-0.5"
+              className="w-3 h-3 md:w-4 md:h-4 text-gray-600"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </button>
+
+          {/* Play Icon */}
+          <button className="w-6 h-6 md:w-8 md:h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors">
+            <svg
+              className="w-3 h-3 md:w-4 md:h-4 text-gray-600 ml-0.5"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
